@@ -1,0 +1,63 @@
+import Git
+import Time
+import Time.zone as Timezone
+
+set Timezone.zone = TZone
+set TZone = AEST
+set Time.time = Tim
+
+###################
+
+if (Tim < 360a) {
+  return offline
+}
+elif (Tim > 660p) {
+  return offline
+}
+else {
+  do {
+    go (calling)
+  }
+}
+
+func (calling) {
+  cif (message - +/-*) {
+    call (math.cd)
+  }
+  cif (message - @Rogue#3744) {
+    call (autoping.cd)
+  }
+  cif (message - feedback) or (message - tell) {
+    call (passon.cd)
+  }
+  cif (message - @) AND (message - Welcome to ^serv^) {
+    send message (welcome.msg)
+  }
+  cif (message - can,xp,is,?) {
+    fetch (mee6stats)
+    send message (xp.msg) [mee6stats|@user#disc]
+  }
+  cif (message - GG) AND (message - level [16*i]) AND (author - 159985870458322944) {
+    init (wheel.cd)
+  }
+  -- gtg --
+  cfif (message - gtg) {
+    call (gtg.cd)
+    cif (message - school) {
+      in (gtg.cd) {
+        go (school)
+      }
+    }
+    elcif (message - bed) {
+      in (gtg.cd) {
+        go (sleep)
+      }
+    }
+    else {
+      in (gtg.cd) {
+        go (other)
+      }
+    }
+  }
+  == gtg ==
+}
