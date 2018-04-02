@@ -1,0 +1,17 @@
+import time.timer as time
+
+####
+
+time.begin (600|i+1)
+i = i+1
+on time.end (i) = {
+  set [author] = invalid
+}
+cif (message - spin) AND (author - valid) {
+  import (https://wheeldecide.com/wheels/entertainment/video-game-genre-decision-maker/) as Wheel
+  Wheel.click
+  
+  get (Wheel.output)
+  send message (Your game to play now is [Wheel.output])
+  set [author] = invalid
+}
