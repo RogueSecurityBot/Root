@@ -5,6 +5,7 @@ import Time.zone as Timezone
 set Timezone.zone = TZone
 set TZone = AEST
 set Time.time = Tim
+folder ref = /actions/
 
 ###################
 
@@ -48,7 +49,7 @@ func (calling) {
         go (school)
       }
     }
-    elcif (message - bed) {
+    elcif (message - bed) or rel {
       in (gtg.cd) {
         go (sleep)
       }
