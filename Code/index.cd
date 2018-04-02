@@ -31,7 +31,7 @@ func (calling) {
     call (passon.cd)
   }
   cif (message - @) AND (message - Welcome to ^serv^) {
-    send message (welcome.msg)
+    send message (welcome.msg) [@user#disc as mention]
   }
   cif (message - can,xp,is,?) {
     fetch (mee6stats)
