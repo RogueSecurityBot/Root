@@ -1,0 +1,15 @@
+import emotes
+
+##
+
+func (school) {
+  send message (Enjoy! :puj33Wave:)
+}
+func (sleep) {
+  send message (Goodnight! :puj33Wave:)
+}
+func (other) {
+  send message (Seeya! :puj33Wave:)
+}
+
+end{}
