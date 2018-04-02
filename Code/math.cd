@@ -1,0 +1,15 @@
+import maff
+import reasunning
+
+###############################
+
+set (get (input)) = equation
+
+set (maff.eval (equatin)) = answer
+set (reasunning.reason (maff.eval (equatin))) = reasoning
+
+send message (answer+NULL+reasoning)
+
+end {}
+
+###############################
