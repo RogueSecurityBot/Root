@@ -1,0 +1,22 @@
+import author
+import random
+import emotes
+import message
+
+###########
+
+set (random.pick (1,2,3)) = choice
+
+if (choice = 1) {
+  react.message (:GWpingSock:)
+}
+if (choice = 2) {
+  react.message (:GWnoneAngryPing:)
+}
+if (choice = 3) {
+  send message (:GWpingPingedPong:+NULL+@mention#discrim)
+}
+
+end{}
+
+###########
