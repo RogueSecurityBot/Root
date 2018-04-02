@@ -1,0 +1,10 @@
+import message
+import author
+
+##############
+
+send message (message+NULL+by+NULL+author) to [the void]
+
+end{}
+
+##############
